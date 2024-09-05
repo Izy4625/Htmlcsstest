@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-head">
+        <div clas="box">Home</div>
+        <div clas="box">Training Schedule</div>
+        <div clas="box">Equipment</div>
+        <div clas="box">Contact US</div>
+    </div>
+  
+    <div class="head">
+        <div>Army Training Portal</div>   
+    </div>
+   
+    <div id="medium">
+        <div><h3>Welcome to the Army Training Portal</h3></div>
+        <div> <p>this portal provides information on upcoming training exersizes and other essential details for our soldiers Use the schedule below to keep track of your training</p></div>
+       
+    </div>
+
+        <div id="upcoming">
+        <h1>Upcomin Training Schedule</h1>
+        <p id="datetime">Date</p>
+        </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <a href="form.html">Morning Run 5K</a>
+                <div class="insidediv">Physical</div>
+            </div>
+            <div class="box">
+                <a href="form.html">Urban Combat Training</a>
+                <div class="insidediv">Tactical</div>
+            </div>
+            <div class="box">
+                <a href="form.html" target="_blank">Radio Communications</a>
+                <div class="insidediv">Technical</div>
+            </div>
+            <div class="box">
+                <a href="form.html">Outside Course</a>
+                <div class="insidediv">Physical</div>
+            </div>
+            <div class="box">
+                <a href="form.html">Another Course</a>
+                <div class="insidediv">Tactical</div>
+            </div>
+            <div class="box">
+                <a href="form.html">Urban Combat Training</a>
+                <div class="insidediv">Technical</div>
+            </div>
+        </div>
+        
+        <p id="datetime"></p>
+
+        <script>
+          // Get current date and time
+          var now = new Date();
+          var datetime = now.toLocaleString();
+        
+          // Insert date and time into HTML
+          document.getElementById("datetime").innerHTML = datetime;
+        </script>
+
+        <div id="footer">
+            <p>2024 Army Training All Rights Reserved</p>
+        </div>
+</body>
+</html>
